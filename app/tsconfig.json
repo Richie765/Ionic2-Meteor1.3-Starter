@@ -1,13 +1,33 @@
 {
-  "compilerOptions": {
-    "experimentalDecorators": true,
-    "module": "commonjs",
-    "target": "es5",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "sourceMap": true
-  },
-  "files": [
-    "node_modules/reflect-metadata/reflect-metadata.d.ts"
-  ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "sourceMap": true
+    },
+    "files": [
+        "client/app.ts",
+        "client/components/language-select/language-select.ts",
+        "client/components/welcome-header/welcome-header.ts",
+        "client/lib/meteor-ionic-app.ts",
+        "client/pages/home/home.ts",
+        "server/main.ts",
+        "server/publish.ts",
+        "typings/browser.d.ts",
+        "typings/browser/ambient/meteor/index.d.ts",
+        "typings/main.d.ts",
+        "typings/main/ambient/meteor/index.d.ts",
+        "typings/reflect-metadata.d.ts"
+    ],
+    "filesGlob": [
+        "client/**/*.ts",
+        "server/**/*.ts",
+        "typings/**/*.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }

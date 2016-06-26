@@ -24,3 +24,7 @@ The scripts in package.json help build the application by using "node-sass" to i
 The build script will output platform specific css bundles into the public/stylesheets/ directory that we created.
 The client/index.html includes links to these stylesheets.
 The method setStyle() in client/app.ts file will set only one of the stylesheets to be active based on the platform style class that Ionic adds to the body tag.
+
+#Changes to original version of mjwheatley
+* Updated Meteor to 1.3.4.1
+* Fixed typings
