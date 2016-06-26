@@ -18,7 +18,7 @@
     "angular2-meteor-auto-bootstrap": "0.5.5",
     "es6-promise": "3.2.1",
     "es6-shim": "0.35.1",
-    "ionic-angular": "2.0.0-beta.7",
+    "ionic-angular": "2.0.0-beta.9",
     "ionicons": "3.0.0",
     "meteor-node-stubs": "0.2.3",
     "ng2-translate": "2.1.0",

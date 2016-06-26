@@ -3,7 +3,7 @@ import 'zone.js/dist/zone';
 import {provide, Type, Provider, IterableDiffers, Component, PLATFORM_DIRECTIVES, enableProdMode} from '@angular/core';
 import {METEOR_PROVIDERS} from 'angular2-meteor';
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
-import {IonicApp, IONIC_DIRECTIVES, ionicProviders, postBootstrap} from 'ionic-angular';
+import {IONIC_DIRECTIVES, ionicProviders, ionicPostBootstrap} from 'ionic-angular';
 
 export function MeteorIonicApp(args: any = {}) {
     return function(cls) {
@@ -22,7 +22,7 @@ export function MeteorIonicApp(args: any = {}) {
         // wait for meteor platform
         Meteor.startup(function() {
             // define array of bootstrap providers
-            let providers = ionicProviders(args).concat(args.providers || [], METEOR_PROVIDERS);
+            let providers = ionicProviders().concat(args.providers || [], METEOR_PROVIDERS);
             // auto add Ionic directives
             let directives = args.directives ? args.directives.concat(IONIC_DIRECTIVES) : IONIC_DIRECTIVES;
             // automatically provide all of Ionic's directives to every component
@@ -31,7 +31,7 @@ export function MeteorIonicApp(args: any = {}) {
                 enableProdMode();
             }
             bootstrap(cls, providers).then( appRef => {
-                postBootstrap(appRef, args.prodMode);
+                ionicPostBootstrap(appRef);
             });
             return cls;
         });

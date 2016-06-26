@@ -1,9 +1,10 @@
-import {Page, NavController} from 'ionic-angular';
+import {Component} from '@angular/core';
+import {NavController} from 'ionic-angular';
 import {TranslateService, TranslatePipe} from 'ng2-translate/ng2-translate';
 import {WelcomeHeaderComponent} from '../../components/welcome-header/welcome-header';
 import {LanguageSelectComponent} from "../../components/language-select/language-select";
 
-@Page({
+@Component({
     templateUrl: '/client/pages/home/home.html',
     pipes: [TranslatePipe],
     directives: [WelcomeHeaderComponent, LanguageSelectComponent]

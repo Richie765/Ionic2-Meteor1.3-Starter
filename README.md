@@ -28,3 +28,10 @@ The method setStyle() in client/app.ts file will set only one of the stylesheets
 #Changes to original version of mjwheatley
 * Updated Meteor to 1.3.4.1
 * Fixed typings
+* Upgraded to Ionic 2.0.0-beta.9
+
+##Todo
+* Fix args, dev-mode in client/lib/meteor-ionic-app.ts
+
+##Notes
+* https://github.com/driftyco/ionic/commit/73635f393974dc6c44f69cf7814d22243f80a5c5

@@ -1,5 +1,5 @@
 import {MeteorComponent} from 'angular2-meteor';
-import {App, IonicApp, Platform} from 'ionic-angular';
+import {App, Platform} from 'ionic-angular';
 import {Component, NgZone, provide, Type, ViewChild} from '@angular/core';
 import {Http, HTTP_PROVIDERS} from '@angular/http';
 import {TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
@@ -39,9 +39,9 @@ class MyApp extends MeteorComponent {
     private user:Meteor.User;
 
     @ViewChild('leftMenu') leftMenu:any;
-    @ViewChild('content') nav:any;    
-    
-    constructor(private app:IonicApp,
+    @ViewChild('content') nav:any;
+
+    constructor(private app:App,
                 private platform:Platform,
                 private zone:NgZone,
                 private translate:TranslateService) {
