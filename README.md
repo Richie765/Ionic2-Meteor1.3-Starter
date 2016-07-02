@@ -31,9 +31,28 @@ The method setStyle() in client/app.ts file will set only one of the stylesheets
 * Upgraded to Ionic 2.0.0-beta.9
 * Added: npm run meteor-ios
 * Tested on ios simulator
+* Upgraded to Ionic 2 beta.10 and Angular 2 RC.3
+* Implemented simpler bootstrap
+
+Upgrade to Beta.10 and Angular RC.3
+* angular to 2.0.0-rc.3
+* ionic-angular to 2.0.0-beta.10
+* ng2-translate to 2.2.2
+* Update remaining dependencies according to the above ones
+* richie765/angular2-meteor - fixed to RC.3
+* richie765/angular2-meteor-auto-bootstrap - fixed to RC.3
+
+```bash
+rm -rf node_modules .meteor/local
+npm install
+meteor --settings settings.json
+meteor --production
+```
+
+* Remove \*navbar from  ion-navbar
+* Put ion-navbar into ion-header
 
 ##Todo
-* Update angular
 * Fix args, dev-mode in client/lib/meteor-ionic-app.ts
 
 ##Notes

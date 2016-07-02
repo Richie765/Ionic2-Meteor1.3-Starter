@@ -1,3 +1,5 @@
+// This file no longer used, simple bootstrap seems sufficient
+
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import {provide, Type, Provider, IterableDiffers, Component, PLATFORM_DIRECTIVES, enableProdMode} from '@angular/core';

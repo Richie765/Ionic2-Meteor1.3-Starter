@@ -1,9 +1,8 @@
-import {MeteorComponent} from 'angular2-meteor';
-import {App, Platform} from 'ionic-angular';
+import {MeteorComponent, METEOR_PROVIDERS} from 'angular2-meteor';
+import {ionicBootstrap, App, Platform} from 'ionic-angular';
 import {Component, NgZone, provide, Type, ViewChild} from '@angular/core';
 import {Http, HTTP_PROVIDERS} from '@angular/http';
 import {TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
-import {MeteorIonicApp} from "./lib/meteor-ionic-app";
 import {Constants} from "../lib/Constants";
 
 /*********/
@@ -13,14 +12,8 @@ import {HomePage} from './pages/home/home';
 declare var Meteor;
 declare var device;
 
-@MeteorIonicApp({
+@Component({
     templateUrl: '/client/app.html',
-    config: { // http://ionicframework.com/docs/v2/api/config/Config/
-        //mode: Constants.STYLE.MD,
-        //pageTransition: Constants.STYLE.IOS,
-        //swipeBackEnabled: false,
-        //tabbarPlacement: 'top'
-    },
     providers: [
         HTTP_PROVIDERS,
         provide(TranslateLoader, {
@@ -162,3 +155,11 @@ class MyApp extends MeteorComponent {
         return bodyStyle;
     }
 }
+
+// Bootstrap
+
+Meteor.startup(function () {
+  ionicBootstrap(MyApp, [
+    METEOR_PROVIDERS
+  ]);
+});
