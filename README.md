@@ -42,15 +42,12 @@ Upgrade to Beta.10 and Angular RC.3
 * richie765/angular2-meteor - fixed to RC.3
 * richie765/angular2-meteor-auto-bootstrap - fixed to RC.3
 
-```bash
-rm -rf node_modules .meteor/local
-npm install
-meteor --settings settings.json
-meteor --production
-```
-
-* Remove \*navbar from  ion-navbar
-* Put ion-navbar into ion-header
+Upgrade to Ionic Master, Angular 2 RC4
+* angular to 2.0.0-rc.3
+* ionic-angular to master
+* ng2-translate to 2.2.2
+* angular2-meteor to master
+* angular2-meteor-auto-bootstrap to master
 
 ##Todo
 * Fix args, dev-mode in client/lib/meteor-ionic-app.ts
