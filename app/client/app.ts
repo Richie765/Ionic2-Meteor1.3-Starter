@@ -5,6 +5,8 @@ import {Http, HTTP_PROVIDERS} from '@angular/http';
 import {TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
 import {Constants} from "../lib/Constants";
 
+import template from './app.html';
+
 /*********/
 /* Pages */
 import {HomePage} from './pages/home/home';
@@ -13,7 +15,8 @@ declare var Meteor;
 declare var device;
 
 @Component({
-    templateUrl: '/client/app.html',
+    template,
+    // templateUrl: '/client/app.html',
     providers: [
         HTTP_PROVIDERS,
         provide(TranslateLoader, {

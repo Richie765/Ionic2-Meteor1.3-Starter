@@ -6,9 +6,11 @@ import {IONIC_DIRECTIVES, NavController, Alert} from 'ionic-angular';
 import {TranslateService, TranslatePipe} from 'ng2-translate/ng2-translate';
 import {Constants} from "../../../lib/Constants";
 
+import template from './language-select.html';
+
 @Component({
     selector: 'language-select',
-    templateUrl: '/client/components/language-select/language-select.html',
+    template,
     directives: [IONIC_DIRECTIVES],
     pipes: [TranslatePipe]
 })

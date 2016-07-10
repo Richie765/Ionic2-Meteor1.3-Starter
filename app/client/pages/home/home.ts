@@ -4,11 +4,10 @@ import {TranslateService, TranslatePipe} from 'ng2-translate/ng2-translate';
 import {WelcomeHeaderComponent} from '../../components/welcome-header/welcome-header';
 import {LanguageSelectComponent} from "../../components/language-select/language-select";
 
-// import template from './home.html';
-// console.log(template);
+import template from './home.html';
 
 @Component({
-    templateUrl: '/client/pages/home/home.html',
+    template,
     pipes: [TranslatePipe],
     directives: [WelcomeHeaderComponent, LanguageSelectComponent]
 })

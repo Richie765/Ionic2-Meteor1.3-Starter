@@ -5,9 +5,11 @@ import {Component} from '@angular/core';
 import {IONIC_DIRECTIVES} from 'ionic-angular';
 import {TranslateService, TranslatePipe} from 'ng2-translate/ng2-translate';
 
+import template from './welcome-header.html';
+
 @Component({
+    template,
     selector: 'welcome-header',
-    templateUrl: '/client/components/welcome-header/welcome-header.html',
     directives: [IONIC_DIRECTIVES],
     pipes: [TranslatePipe]
 })
