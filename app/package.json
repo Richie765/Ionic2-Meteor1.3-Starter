@@ -12,11 +12,11 @@
     "build": "npm-run-all build:*"
   },
   "dependencies": {
-    "@angular/core": "2.0.0-rc.3",
-    "@angular/common": "2.0.0-rc.3",
-    "@angular/http": "2.0.0-rc.3",
-    "angular2-meteor": "richie765/angular2-meteor",
-    "angular2-meteor-auto-bootstrap": "richie765/angular2-meteor-auto-bootstrap",
+    "@angular/core": "^2.0.0-rc.2",
+    "@angular/common": "^2.0.0-rc.2",
+    "@angular/http": "^2.0.0-rc.2",
+    "angular2-meteor": "0.6.0",
+    "angular2-meteor-auto-bootstrap": "0.5.6",
     "angular2-meteor-polyfills": "^0.1.1",
     "es6-promise": "3.2.1",
     "es6-shim": "^0.35.0",
