@@ -28,26 +28,11 @@ The method setStyle() in client/app.ts file will set only one of the stylesheets
 #Changes to original version of mjwheatley
 * Updated Meteor to 1.3.4.1
 * Fixed typings
-* Upgraded to Ionic 2.0.0-beta.9
+* Upgraded to Ionic 2.0.0-beta.10
+* Upgraded to Ionic 2.0.0-rc.4
 * Added: npm run meteor-ios
 * Tested on ios simulator
-* Upgraded to Ionic 2 beta.10 and Angular 2 RC.3
 * Implemented simpler bootstrap
-
-Upgrade to Beta.10 and Angular RC.3
-* angular to 2.0.0-rc.3
-* ionic-angular to 2.0.0-beta.10
-* ng2-translate to 2.2.2
-* Update remaining dependencies according to the above ones
-* richie765/angular2-meteor - fixed to RC.3
-* richie765/angular2-meteor-auto-bootstrap - fixed to RC.3
-
-Upgrade to Ionic Master, Angular 2 RC4
-* angular to 2.0.0-rc.3
-* ionic-angular to master
-* ng2-translate to 2.2.2
-* angular2-meteor to master
-* angular2-meteor-auto-bootstrap to master
 
 ##Todo
 * Fix args, dev-mode in client/lib/meteor-ionic-app.ts

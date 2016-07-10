@@ -5,8 +5,8 @@
     "start": "npm-run-all build:* --parallel watch:* meteor",
     "meteor": "meteor run --settings settings.json",
     "meteor-ios": "meteor run ios --settings settings.json",
-    "build:ios-css": "node-sass --include-path node_modules/ionic-angular --include-path node_modules/ionicons/dist/scss client/theme/app.ios.scss | postcss --local-plugins --use autoprefixer --output public/stylesheets/ios-bundle.css",
-    "build:md-css": "node-sass --include-path node_modules/ionic-angular --include-path node_modules/ionicons/dist/scss client/theme/app.md.scss | postcss --local-plugins --use autoprefixer --output public/stylesheets/md-bundle.css",
+    "build:ios-css": "node-sass --include-path node_modules/ionic-angular --include-path node_modules/ionicons/dist/scss imports/theme/app.ios.scss | postcss --local-plugins --use autoprefixer --output public/stylesheets/ios-bundle.css",
+    "build:md-css": "node-sass --include-path node_modules/ionic-angular --include-path node_modules/ionicons/dist/scss imports/theme/app.md.scss | postcss --local-plugins --use autoprefixer --output public/stylesheets/md-bundle.css",
     "build:fonts": "copyfiles -f 'node_modules/ionic-angular/fonts/*.+(ttf||woff||woff2)' public/fonts/",
     "watch:css": "nodemon -w client -e scss -x npm run build:ios-css build:md-css",
     "build": "npm-run-all build:*"
