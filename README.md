@@ -1,3 +1,7 @@
+Starter app with
+* Meteor 1.3
+* Angular 2 RC.4
+* Ionic 2 beta 10
 
 #Getting Started
 ```
@@ -37,7 +41,7 @@ The method setStyle() in client/app.ts file will set only one of the stylesheets
 * Moved themes out of client to prevent compilation by angular2-compilers
 
 ##Todo
-* Language name in button not set initially, loading order problem?
+* Language name in button may not always be set initially, loading order problem?
 
 ##Notes
 * https://github.com/driftyco/ionic/commit/73635f393974dc6c44f69cf7814d22243f80a5c5
