@@ -31,11 +31,13 @@ The method setStyle() in client/app.ts file will set only one of the stylesheets
 * Upgraded to Ionic 2.0.0-beta.10
 * Upgraded to Ionic 2.0.0-rc.4
 * Added: npm run meteor-ios
-* Tested on ios simulator
+* Tested on iOS simulator
 * Implemented simpler bootstrap
+* Upgraded to angular2-compilers 0.6.0
+* Moved themes out of client to prevent compilation by angular2-compilers
 
 ##Todo
-* Fix args, dev-mode in client/lib/meteor-ionic-app.ts
+* Language name in button not set initially, loading order problem?
 
 ##Notes
 * https://github.com/driftyco/ionic/commit/73635f393974dc6c44f69cf7814d22243f80a5c5
