@@ -1,10 +1,10 @@
-# DEPRECIATED
-Use https://github.com/Richie765/ionic-starter-meteor instead.
-
 Starter app with
 * Meteor 1.3
 * Angular 2 RC.4
 * Ionic 2 beta 10
+
+# DEPRECIATED
+Use https://github.com/Richie765/ionic-starter-meteor instead.
 
 #Getting Started
 ```
