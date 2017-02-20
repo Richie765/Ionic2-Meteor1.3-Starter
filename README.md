@@ -1,4 +1,5 @@
-DEPRECIATED. Use https://github.com/Richie765/ionic-starter-meteor instead.
+# DEPRECIATED
+Use https://github.com/Richie765/ionic-starter-meteor instead.
 
 Starter app with
 * Meteor 1.3
