@@ -1,3 +1,5 @@
+DEPRECIATED. Use https://github.com/Richie765/ionic-starter-meteor instead.
+
 Starter app with
 * Meteor 1.3
 * Angular 2 RC.4
